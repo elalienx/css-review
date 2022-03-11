@@ -1,8 +1,12 @@
 // Project files
-import "styles/style.css"
-
+import "styles/style.css";
+import data from "data/profile.json";
 
 export default function App() {
+  // Properties
+  const name = data[0].name;
+  const imageSource = require(`./assets/${data[0].imageURL}`);
+
   return (
     <div className="App">
       <h1>Hello world</h1>
@@ -15,6 +19,11 @@ export default function App() {
         veniam facilis aspernatur delectus nam illo dolorem incidunt quod in
         nisi consectetur.
       </p>
+      <img
+        className="profile-picture"
+        src={imageSource}
+        alt={`The profile picture of ${name}`}
+      />
     </div>
   );
 }

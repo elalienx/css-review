@@ -5,6 +5,28 @@ body {
 }
 
 .App {
-  background-color: yellow;
+  /* font-family: "Open Sans", sans-serif; */
   font-family: "Open Sans", sans-serif;
+
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 500px;
+  object-fit: cover;
+}
+
+@media (min-width: 750px) {
+  .App {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 0,
+    "name": "Armin Perez",
+    "imageURL": "person.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Rainbow Mika",
+    "imageURL": "colours.jpg"
+  }
+]
